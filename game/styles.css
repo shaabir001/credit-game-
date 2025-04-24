@@ -1,0 +1,141 @@
+/* Fonts and base */
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background-color: #f6f1e9;
+  color: #2e2b28;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-weight: 700;
+  margin: 0.5em 0;
+}
+
+ul {
+  padding-left: 1.2em;
+}
+
+button {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Sticky Top Bar */
+.top-bar {
+  position: sticky;
+  top: 0;
+  background: #e6dac7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.title {
+  font-size: 1.8em;
+  color: #866c3f;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1em;
+}
+
+.lux-btn {
+  background-color: #c2aa7d;
+  color: #fff;
+  border: none;
+  padding: 0.6em 1.2em;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.lux-btn:hover {
+  background-color: #a88e62;
+}
+
+/* Main Content */
+.main-content {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats-panel {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-bottom: 2em;
+  font-size: 1.2em;
+  color: #6e5e3e;
+  background: #f9f6f1;
+  padding: 1em 2em;
+  border-radius: 10px;
+  border: 2px solid #dbc6a1;
+}
+
+.card-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5em;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.card {
+  background-color: #fffefc;
+  border: 2px solid #d2b48c;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #866c3f;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+/* Achievements */
+.achievements {
+  margin-top: 3em;
+  background-color: #fff8f0;
+  border: 1px solid #decab3;
+  padding: 1.5em;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.achievements h2 {
+  color: #755c3b;
+  margin-bottom: 1em;
+}
+
+#achievementList {
+  list-style-type: square;
+  color: #3d362c;
+}
+
+/* Footer */
+.footer {
+  margin-top: 3em;
+  text-align: center;
+  padding: 2em;
+  background-color: #e6dac7;
+  color: #5a4a3a;
+  font-size: 0.9em;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Credit Score Challenge - Luxury Edition</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="top-bar">
+    <h1 class="title">💼 Credit Score Challenge</h1>
+    <nav class="nav-buttons">
+      <button id="drawCard" class="lux-btn">Draw Card</button>
+      <button id="shuffleDeck" class="lux-btn">Shuffle</button>
+      <button id="resetGame" class="lux-btn">Restart</button>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section class="stats-panel">
+      <div class="score">Score: <span id="score">650</span></div>
+      <div class="target">Target: 750</div>
+      <div class="turns">Turns Left: <span id="turns">10</span></div>
+    </section>
+
+    <section class="card-area" id="cardArea">
+      <!-- Cards dynamically inserted -->
+    </section>
+
+    <section class="achievements">
+      <h2>Achievements</h2>
+      <ul id="achievementList"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>2025 Credit Score Challenge</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
